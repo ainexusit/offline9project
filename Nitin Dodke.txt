@@ -1,0 +1,119 @@
+Nitin Dodke
+Data Engineer
+
+Phone: 8999107315
+Email: dnitin9121995@gmail.com
+Address: India, Pune, Gokhale Nagar,senapati Bapat road,Pune, 411016
+
+Professional summary
+3.11+ Years as Data Engineer
+11 month Data Engineer Jan 2022 to Nov 2022 Yash Technologies
+3+ Years as Data Engineer at Xorient From March 2023 to till date
+Experienced in designing, developing, and managing robust data pipelines and architectures using technologies like Python, PySpark, Azure Data Factory, Databricks, SQL, Scala and Spark. Adept at ETL processes, data modeling, and data warehousing solutions, with hands-on expertise in cloud platforms (Azure, AWS). Skilled in optimizing data workflows for performance, scalability, and reliability while ensuring data security and compliance. Strong problem-solving abilities with a focus on delivering data solutions that support business intelligence and analytics Python, SQL, Databricks, Azure Data Factory, PySpark , Apache Spark, Hadoop , Hive , Pig , Java, Scala, ETL (Extract, Transform, Load), Apache Hadoop, Apache Spark, Apache Flink, Apache Kafka, AWS (S3, Glue, Redshift, Lambda, EC2), Azure (Data Factory, Databricks, Synapse, Blob storage, ADLS, Azure DevOps, KeyVault, Logic Apps), Google Cloud (BigQuery, Cloud Storage, Dataflow), MySQL, PostgreSQL, Oracle, MongoDB, Cassandra, Couchbase, HBase, Data Modeling, Star Schema, Snowflake Schema, Dimensional Modeling, Data Lineage, Apache Airflow, Luigi, AWS Step Functions, Git, CI/CD, Jenkins, GitLab CI, CircleCI, Data Security, GDPR Compliance, Docker, Kubernetes, Power BI, Tableau, Looker, Problem Solving, Communication, Project Management.
+
+Experience
+Data Engineer
+Project Name : Insure Lake Analytics
+Technical Skills :
+Microsoft Azure, Azure Data Factory, Azure Logic Apps, ADLS Gen2 (Bronze, Silver, Gold Layers), Azure Databricks, PySpark, Delta Lake, Azure Synapse Analytics, Power BI, CSV, JSON
+Concepts: Medallion Architecture, Incremental Loading (Watermarks), RBAC, Data Validation, Deduplication using Window Functions
+Project Overview
+Insure Lake Analytics is an end-to-end data engineering solution built for the Insurance domain to process large volumes (15–20 GB daily) of structured and semi-structured data received from Hospitals, TPAs, Garages, SAP Systems, and Partner APIs.The platform is built on Microsoft Azure using Medallion Architecture (Bronze → Silver → Gold).
+The primary objective was to design a secure, scalable, and automated data pipeline to support:
+  • Claims processing
+  • Fraud detection
+  • Risk analysis
+  • Regulatory compliance
+  • Business intelligence reporting
+Roles and Responsibility
+  • Designed batch ingestion pipelines using Azure Data Factory
+  • Implemented incremental loading using watermark strategy
+  • Developed Mapping Data Flows for validation and transformation
+  • Built Databricks notebooks for Bronze → Silver → Gold processing
+  • Implemented deduplication using window functions to remove duplicate claim records
+  • Created aggregation logic for fraud detection and risk scoring datasets
+  • Managed Delta tables for optimized performance and ACID compliance
+  • Implemented retry and failure-handling mechanisms
+  • Structured Gold layer data for Power BI dashboards
+  • Monitored pipeline executions and resolved failures
+Challenges
+1. Handling Large Heterogeneous Datasets
+ Implemented Medallion architecture for structured processing and scalability.
+2. Manual Ingestion Delays
+ Automated file-based triggers using Logic Apps and ADF.
+3. Duplicate Claim Records
+ Used window functions in Databricks for efficient deduplication.
+4. Fraud Detection Complexity
+ Created curated Gold feature datasets ready for ML models.
+5. Regulatory Compliance Requirements
+ Implemented RBAC, ACLs, Key V
+
+Data Engineer
+Project Name : Vehicle CAN Bus MF4 Decoding & Analytics Pipeline
+Technical Skills
+Amazon Web Services (AWS), Amazon S3, AWS Glue (Glue-1, Glue-2), PySpark, AWS Lambda, Amazon EventBridge, Amazon ECS Fargate, Amazon SQS (FIFO), Dead Letter Queue (DLQ), AWS Glue Data Catalog, Amazon Athena, Amazon CloudWatch, Amazon SNS, IAM, Server-Side Encryption (SSE), TLS/HTTPS, CloudTrail, MF4 (Binary), DBC (CAN Mapping), Parquet
+Project Overview
+The Vehicle CAN Bus MF4 Decoding & Analytics Pipeline is designed to process large binary MF4 files generated during pre-launch vehicle testing.During testing, the vehicle’s ECU communicates with sensors via the CAN bus (binary messaging system). High-frequency CAN signals such as RPM, speed, brake status, and engine temperature are captured and stored in MF4 binary format (4–5 GB per file). These files are not human-readable and require DBC files for decoding.
+This project automates the complete lifecycle:
+  • Validating MF4 file integrity
+  • Verifying DBC version compatibility
+  • Orchestrating serverless decoding workloads
+  • Streaming-based decoding using containerized processing
+  • Enforcing strict schema validation
+  • Managing failures using DLQ and retry workflows
+  • Preparing analytics-ready Parquet datasets for querying
+Roles and Responsibilities
+  • Developed Glue-1 job for MF4 integrity validation, DBC version checks, and schema validation
+  • Implemented SQS FIFO-based ordered and exactly-once processing mechanism
+  • Built Lambda orchestration logic to trigger ECS Fargate decoding tasks
+  • Developed containerized streaming-based MF4 decoding application
+  • Applied DBC signal mapping to decode raw CAN frames into structured datasets
+  • Enforced schema validation during write phase to prevent schema drift
+  • Implemented Glue-2 job to identify failed files and push metadata to DLQ
+  • Designed controlled retry workflow for isolated reprocessing
+  • Configured CloudWatch dashboards and logs for debugging
+  • Integrated SNS alerts for failure notifications
+  • Supported production monitoring and failure resolution
+C
+
+Data Engineer
+Project Name : Clinician Insights
+Technical Skills
+Amazon Web Services (AWS), Amazon S3, Amazon EMR, Databricks, PySpark, Amazon Redshift, Amazon Athena, AWS Step Functions, Data Aggregation, Benchmarking Analytics, Data Enrichment, Data Quality Validation, Metadata-Driven Architecture, HIPAA Compliance, IAM, Encryption at Rest and In Transit, Audit Logging
+Project Overview
+Clinician Insights is a cloud-based healthcare analytics and benchmarking platform designed for NHS practices in the UK.
+The platform aggregates clinical, provider, and demographic data to enable benchmarking across similar practices. Instead of comparing performance only against historical internal data, clinicians can evaluate their performance relative to peer practices within the same specialty, region, and demographic cluster.
+The solution provides:
+  • Benchmark Registry for peer comparison
+  • Relative Performance Analytics against industry averages and top performers
+  • Actionable Insights for improving patient outcomes and operational efficiency
+The architecture follows a 4-layer model:
+Source → Processing (EMR) → Storage → Query & Serving
+Data flows from Databricks (IDS) and provider systems into S3, processed through EMR jobs, stored in Redshift, and queried via Athena for application consumption.
+Roles and Responsibilities
+  • Designed and developed scalable ETL workflows using Amazon EMR (Job 1, Job 2, Job 3).
+  • Built end-to-end data pipeline: Databricks → Amazon S3 → EMR → S3 → Amazon Redshift.
+  • Implemented 4-layer architecture: Source → Processing → Storage → Query & Serving.
+  • Extracted and integrated IDS tables (public_master, public_attribute, public_demographic, public_location_master).
+  • Integrated provider datasets (provider_data1, provider_master, provider_directory_info) with public demographic data.
+  • Built aggregation logic for procedure-performed metrics by Practice, Provider, Code, Year, and Month.
+  • Developed Practice-Provider enriched dataset combining active practices with demographic and location attributes.
+  • Imp
+
+
+Education
+2011 - 2016
+Bachelor of Engineering (Civil)
+Swami Ramanand Teerth Marathwada University,Nanded
+India, Latur
+
+Languages
+Marathi
+Hindi
+English
+
+Hobbies
+Traveling
+Playing Cricket
+Tracking
+
